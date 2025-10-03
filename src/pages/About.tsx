@@ -114,12 +114,12 @@ const About = () => {
             {founders.map((founder, index) => (
               <Card
                 key={index}
-                className="border-border shadow-md rounded-2xl overflow-hidden"
+                className="border-border shadow-md rounded-2xl"
               >
                 <CardContent className="p-6">
-                  <div className="grid md:grid-cols-4 gap-6 items-center">
+                  <div className="grid md:grid-cols-4 gap-6 items-start">
                     {/* Image */}
-                    <div className="md:col-span-1">
+                    <div className="md:col-span-1 flex justify-center">
                       <img
                         src={
                           index === 0
@@ -129,7 +129,7 @@ const About = () => {
                             : teamImage3
                         }
                         alt={founder.name}
-                        className="w-full h-56 object-cover rounded-lg bg-gray-100 shadow-sm"
+                        className="w-full max-h-64 object-contain rounded-lg bg-gray-100 shadow-sm"
                       />
                     </div>
 
@@ -141,7 +141,7 @@ const About = () => {
                       <p className="text-accent font-medium mb-4">
                         {founder.role}
                       </p>
-                      <p className="text-muted-foreground leading-relaxed text-lg">
+                      <p className="text-muted-foreground leading-relaxed text-lg whitespace-pre-line">
                         {founder.bio}
                       </p>
                     </div>
