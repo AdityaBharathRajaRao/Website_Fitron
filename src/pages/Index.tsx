@@ -6,47 +6,28 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import heroImage from "@/assets/hero-manufacturing.jpg";
 import qualityImage from "@/assets/quality-lab.jpg";
-
 const Index = () => {
-  const valueProps = [
-    {
-      icon: <Globe className="h-8 w-8 text-accent" />,
-      title: "Indigenization & OEM Vision",
-      description: "Reducing import dependency with locally manufactured components that meet global quality standards.",
-    },
-    {
-      icon: <Award className="h-8 w-8 text-accent" />,
-      title: "International Standards",
-      description: "ASTM, ASME, and ISO-grade manufacturing with full material certifications and testing documentation.",
-    },
-    {
-      icon: <Users className="h-8 w-8 text-accent" />,
-      title: "Local Talent & Supply Chain",
-      description: "Leveraging India's skilled workforce and robust supply ecosystem to deliver competitive, reliable solutions.",
-    },
-  ];
-
-  const capabilities = [
-    "CNC Machining (3, 4, 5-axis)",
-    "Precision Grinding & Finishing",
-    "Heat Treatment & Surface Hardening",
-    "CMM Inspection & Quality Control",
-    "Material Testing & Certification",
-    "Custom Engineering & Prototyping",
-  ];
-
-  return (
-    <div className="min-h-screen flex flex-col">
+  const valueProps = [{
+    icon: <Globe className="h-8 w-8 text-accent" />,
+    title: "Indigenization & OEM Vision",
+    description: "Reducing import dependency with locally manufactured components that meet global quality standards."
+  }, {
+    icon: <Award className="h-8 w-8 text-accent" />,
+    title: "International Standards",
+    description: "ASTM, ASME, and ISO-grade manufacturing with full material certifications and testing documentation."
+  }, {
+    icon: <Users className="h-8 w-8 text-accent" />,
+    title: "Local Talent & Supply Chain",
+    description: "Leveraging India's skilled workforce and robust supply ecosystem to deliver competitive, reliable solutions."
+  }];
+  const capabilities = ["CNC Machining (3, 4, 5-axis)", "Precision Grinding & Finishing", "Heat Treatment & Surface Hardening", "CMM Inspection & Quality Control", "Material Testing & Certification", "Custom Engineering & Prototyping"];
+  return <div className="min-h-screen flex flex-col">
       <Navbar />
       
       {/* Hero Section */}
       <section className="relative h-[600px] flex items-center">
         <div className="absolute inset-0">
-          <img 
-            src={heroImage} 
-            alt="Modern manufacturing facility" 
-            className="w-full h-full object-cover"
-          />
+          <img src={heroImage} alt="Modern manufacturing facility" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-overlay"></div>
         </div>
         
@@ -81,52 +62,19 @@ const Index = () => {
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
-            {valueProps.map((prop, index) => (
-              <Card key={index} className="border-border hover:shadow-lg transition-shadow">
+            {valueProps.map((prop, index) => <Card key={index} className="border-border hover:shadow-lg transition-shadow">
                 <CardContent className="pt-6">
                   <div className="mb-4">{prop.icon}</div>
                   <h3 className="text-xl font-semibold mb-3">{prop.title}</h3>
                   <p className="text-muted-foreground">{prop.description}</p>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
 
       {/* Manufacturing Capabilities */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Advanced Manufacturing Capabilities
-              </h2>
-              <p className="text-lg text-muted-foreground mb-6">
-                Our state-of-the-art facility in Bangalore is equipped with modern CNC machinery, precision measurement tools, and quality control systems that meet international manufacturing standards.
-              </p>
-              <div className="grid grid-cols-2 gap-4">
-                {capabilities.map((capability, index) => (
-                  <div key={index} className="flex items-start gap-2">
-                    <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">{capability}</span>
-                  </div>
-                ))}
-              </div>
-              <Button variant="default" className="mt-8" asChild>
-                <Link to="/about">Learn More About Us <ArrowRight className="ml-2 h-4 w-4" /></Link>
-              </Button>
-            </div>
-            <div>
-              <img 
-                src={qualityImage} 
-                alt="Quality control laboratory" 
-                className="rounded-lg shadow-lg w-full"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       {/* CTA Section */}
       <section className="py-16 bg-gradient-hero text-primary-foreground">
@@ -149,8 +97,6 @@ const Index = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
