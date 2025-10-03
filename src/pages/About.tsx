@@ -1,10 +1,10 @@
-import { Target, Eye, Award } from "lucide-react";
+import { Target, Eye } from "lucide-react";  // ❌ Removed Award since it's unused
 import { Card, CardContent } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { founders } from "@/data/content";
 
-// ✅ import the 3 founder/advisor images
+// ✅ Check that these file names & extensions match exactly
 import teamImage1 from "@/assets/team-founders1.jpg";
 import teamImage2 from "@/assets/team-founders2.jpg";
 import teamImage3 from "@/assets/team-founders3.jpg";
