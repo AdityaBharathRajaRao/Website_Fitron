@@ -5,8 +5,10 @@ import { Card, CardContent } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { productCategories, individualProducts } from "@/data/content";
+
 const Products = () => {
-  return <div className="min-h-screen flex flex-col">
+  return (
+    <div className="min-h-screen flex flex-col">
       <Navbar />
       
       {/* Hero */}
@@ -18,9 +20,6 @@ const Products = () => {
           </p>
         </div>
       </section>
-
-      {/* Manufacturing Vertical */}
-      
 
       {/* Trading Principals - Jergens */}
       <section className="py-16">
@@ -46,10 +45,12 @@ const Products = () => {
             <div className="bg-accent/10 rounded-lg p-6 mb-8">
               <h4 className="text-xl font-bold mb-4">Jergens is a proud supplier to leading companies in the following industries:</h4>
               <div className="grid md:grid-cols-2 gap-3">
-                {['Transportation', 'Military/Aviation', 'Manufacturing', 'Metalworking', 'Material Handling', 'Recreation', 'Entertainment'].map((industry, idx) => <div key={idx} className="flex items-center gap-2">
+                {['Transportation', 'Military/Aviation', 'Manufacturing', 'Metalworking', 'Material Handling', 'Recreation', 'Entertainment'].map((industry, idx) => (
+                  <div key={idx} className="flex items-center gap-2">
                     <span className="text-accent">•</span>
                     <span>{industry}</span>
-                  </div>)}
+                  </div>
+                ))}
               </div>
             </div>
 
@@ -58,12 +59,8 @@ const Products = () => {
                 Jergens quality control procedures define the entire manufacturing process and provide complete traceability from raw materials, tested in our metallurgical lab, to finished products. The certifications are AS 9100 Rev D/ ISO 9001:2015, ANSI/ ASME B30.26, MIL, NAS, (OSHA) 29 CFR 1918, etc.
               </p>
               <div className="flex flex-wrap gap-4">
-                <Button variant="outline" asChild>
-                  
-                </Button>
-                <Button variant="outline" asChild>
-                  
-                </Button>
+                <Button variant="outline" asChild></Button>
+                <Button variant="outline" asChild></Button>
               </div>
             </div>
           </div>
@@ -76,10 +73,12 @@ const Products = () => {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Product Categories</h2>
             <ul className="space-y-3 text-lg">
-              {productCategories.map((category, idx) => <li key={idx} className="flex items-center gap-3">
+              {productCategories.map((category, idx) => (
+                <li key={idx} className="flex items-center gap-3">
                   <span className="text-accent text-xl">•</span>
                   <span className="text-muted-foreground">{category}</span>
-                </li>)}
+                </li>
+              ))}
             </ul>
           </div>
         </div>
@@ -96,13 +95,21 @@ const Products = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {individualProducts.map(product => <Card key={product.id} className="border-border hover:shadow-lg transition-shadow group">
+            {individualProducts.map(product => (
+              <Card key={product.id} className="border-border hover:shadow-lg transition-shadow group">
                 <CardContent className="pt-6">
-                  <img src={product.image} alt={product.name} className="w-full h-48 object-cover rounded-md mb-4 group-hover:scale-105 transition-transform" />
+                  <div className="w-full h-48 flex items-center justify-center bg-white rounded-md mb-4 overflow-hidden">
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      className="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform"
+                    />
+                  </div>
                   <h3 className="text-xl font-bold mb-2">{product.name}</h3>
                   <p className="text-muted-foreground">{product.description}</p>
                 </CardContent>
-              </Card>)}
+              </Card>
+            ))}
           </div>
         </div>
       </section>
@@ -125,6 +132,8 @@ const Products = () => {
       </section>
 
       <Footer />
-    </div>;
+    </div>
+  );
 };
+
 export default Products;
