@@ -4,8 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { productCategories } from "@/data/content";
-import productsImage from "@/assets/products-workholding.jpg";
+import { productCategories, individualProducts } from "@/data/content";
 const Products = () => {
   return <div className="min-h-screen flex flex-col">
       <Navbar />
@@ -83,33 +82,44 @@ const Products = () => {
       {/* Product Categories */}
       <section className="py-16">
         <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Product Categories</h2>
+            <ul className="space-y-3 text-lg">
+              {productCategories.map((category, idx) => (
+                <li key={idx} className="flex items-center gap-3">
+                  <span className="text-accent text-xl">•</span>
+                  <span className="text-muted-foreground">{category}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Individual Products */}
+      <section className="py-16 bg-secondary/30">
+        <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Product Categories</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Products</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Comprehensive range of standard and custom components for industrial applications
+              Comprehensive range of precision-engineered components for industrial applications
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {productCategories.map(category => <Card key={category.id} className="border-border hover:shadow-lg transition-shadow group">
+            {individualProducts.map(product => (
+              <Card key={product.id} className="border-border hover:shadow-lg transition-shadow group">
                 <CardContent className="pt-6">
-                  <img src={productsImage} alt={category.name} className="w-full h-48 object-cover rounded-md mb-4 group-hover:scale-105 transition-transform" />
-                  <h3 className="text-xl font-bold mb-2">{category.name}</h3>
-                  <p className="text-muted-foreground mb-4">{category.description}</p>
-                  <div className="flex gap-3">
-                    <Button variant="link" className="p-0" asChild>
-                      <Link to={`/products/${category.id}`}>
-                        View Details <ArrowRight className="ml-2 h-4 w-4" />
-                      </Link>
-                    </Button>
-                    {category.link && <Button variant="link" className="p-0" asChild>
-                        <a href={category.link} target="_blank" rel="noopener noreferrer">
-                          Jergens Site
-                        </a>
-                      </Button>}
-                  </div>
+                  <img 
+                    src={product.image} 
+                    alt={product.name} 
+                    className="w-full h-48 object-cover rounded-md mb-4 group-hover:scale-105 transition-transform" 
+                  />
+                  <h3 className="text-xl font-bold mb-2">{product.name}</h3>
+                  <p className="text-muted-foreground">{product.description}</p>
                 </CardContent>
-              </Card>)}
+              </Card>
+            ))}
           </div>
         </div>
       </section>
