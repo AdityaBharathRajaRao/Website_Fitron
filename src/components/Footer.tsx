@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
             <h3 className="text-lg font-bold">Fitron Mantech</h3>
@@ -27,15 +27,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Resources */}
-          <div>
-            <h4 className="text-sm font-semibold mb-4">Resources</h4>
-            <ul className="space-y-2">
-              <li><a href="https://www.jergensinc.com/literature" target="_blank" rel="noopener noreferrer" className="text-sm text-primary-foreground/80 hover:text-primary-foreground">Technical Literature</a></li>
-              <li><a href="https://www.jergensinc.com" target="_blank" rel="noopener noreferrer" className="text-sm text-primary-foreground/80 hover:text-primary-foreground">Jergens Inc.</a></li>
-              <li><a href="https://www.jergensinc.com/qualitycertifications" target="_blank" rel="noopener noreferrer" className="text-sm text-primary-foreground/80 hover:text-primary-foreground">Quality Certifications</a></li>
-            </ul>
-          </div>
 
           {/* Contact */}
           <div>
