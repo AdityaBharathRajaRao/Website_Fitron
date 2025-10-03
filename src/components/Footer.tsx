@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-lg font-bold">Fitron Mantech</h3>
             <p className="text-sm text-primary-foreground/80">
-              High-Tech Indian Manufacturing — OEM Components Built for Global Standards
+              Indigenized Industrial Components — Made in India, Trusted Worldwide
             </p>
           </div>
 
@@ -22,8 +22,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><Link to="/about" className="text-sm text-primary-foreground/80 hover:text-primary-foreground">About Us</Link></li>
               <li><Link to="/products" className="text-sm text-primary-foreground/80 hover:text-primary-foreground">Products</Link></li>
-              <li><Link to="/capabilities" className="text-sm text-primary-foreground/80 hover:text-primary-foreground">Capabilities</Link></li>
-              <li><Link to="/careers" className="text-sm text-primary-foreground/80 hover:text-primary-foreground">Careers</Link></li>
+              <li><Link to="/contact" className="text-sm text-primary-foreground/80 hover:text-primary-foreground">Contact</Link></li>
             </ul>
           </div>
 
@@ -31,10 +30,9 @@ const Footer = () => {
           <div>
             <h4 className="text-sm font-semibold mb-4">Resources</h4>
             <ul className="space-y-2">
-              <li><Link to="/resources" className="text-sm text-primary-foreground/80 hover:text-primary-foreground">Downloads</Link></li>
-              <li><Link to="/contact" className="text-sm text-primary-foreground/80 hover:text-primary-foreground">Contact</Link></li>
-              <li><Link to="#" className="text-sm text-primary-foreground/80 hover:text-primary-foreground">Privacy Policy</Link></li>
-              <li><Link to="#" className="text-sm text-primary-foreground/80 hover:text-primary-foreground">Terms of Service</Link></li>
+              <li><a href="https://www.jergensinc.com/literature" target="_blank" rel="noopener noreferrer" className="text-sm text-primary-foreground/80 hover:text-primary-foreground">Technical Literature</a></li>
+              <li><a href="https://www.jergensinc.com" target="_blank" rel="noopener noreferrer" className="text-sm text-primary-foreground/80 hover:text-primary-foreground">Jergens Inc.</a></li>
+              <li><a href="https://www.jergensinc.com/qualitycertifications" target="_blank" rel="noopener noreferrer" className="text-sm text-primary-foreground/80 hover:text-primary-foreground">Quality Certifications</a></li>
             </ul>
           </div>
 

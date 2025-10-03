@@ -22,21 +22,68 @@ const Products = () => {
         </div>
       </section>
 
-      {/* Trading Principal */}
-      <section className="py-12 bg-accent/10 border-y border-accent/20">
+      {/* Manufacturing Vertical */}
+      <section className="py-12 bg-secondary/30">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-            <div>
-              <h2 className="text-2xl font-bold mb-2">Authorized Distributor: Jergens Inc.</h2>
-              <p className="text-muted-foreground">
-                Official partner for Jergens workholding and fixturing solutions in India
-              </p>
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-4">Manufacturing</h2>
+            <p className="text-muted-foreground leading-relaxed">
+              Manufacturing of components for Industrial manufacturing solutions is the core business for the organization. In the process of pooling the required talent, professionals, establishing the local supply chain, etc to bring them all for a common goal of developing prototypes which can be tested & ascertained by internal agencies. Further to success of testing and necessary approvals, the products will be subjected to trials at customer's applications. Upon triumph meeting the customer expectations, the products will be mass produced for industrial consumption and later expanded further for global market.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Trading Principals - Jergens */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Trading Principals</h2>
+            
+            <div className="mb-8">
+              <h3 className="text-2xl font-bold mb-4">Jergens Inc., USA</h3>
+              <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <p>
+                  Associated with <strong>Jergens India Private Limited</strong>, a fully owned subsidiary of Jergens Inc., USA. Jergens Inc. was founded in 1942 by Jack Schron, Sr. and his father Christy, to provide standard components for building jigs and fixtures. Throughout its 75-year history the company has grown into 4 separate operating divisions: Tooling Component Division, Jergens Industrial Supply (JIS), ACME Industrial Company and Advanced Systems Group (ASG) Division of Jergens.
+                </p>
+                <p>
+                  Jergens India Private Limited., Navi Mumbai opened in 2009, providing marketing and importing, warehousing, distribution and technical support to our customers, distributors and local representatives.
+                </p>
+                <p>
+                  Jergens Tooling Division comprises 3 distinct business units: Workholding Solutions, Lifting Solutions and Speciality Fasteners. Today you will find our tooling components, fasteners and hoist rings at work in just about every industry on every continent. Additionally, we offer a wide range of metal working tools, clamps and supplies to manufacturers through our JIS division. ACME industrial is a premium manufacturer of precision drill bushings and keylocking thread inserts. And ASG division specializes in products for light assembly ranging from torque-controlled electric screwdrivers to automation systems.
+                </p>
+              </div>
             </div>
-            <Button variant="outline" asChild>
-              <a href="https://www.jergensinc.com" target="_blank" rel="noopener noreferrer">
-                Visit Jergens Website <ArrowRight className="ml-2 h-4 w-4" />
-              </a>
-            </Button>
+
+            <div className="bg-accent/10 rounded-lg p-6 mb-8">
+              <h4 className="text-xl font-bold mb-4">Jergens is a proud supplier to leading companies in the following industries:</h4>
+              <div className="grid md:grid-cols-2 gap-3">
+                {['Transportation', 'Military/Aviation', 'Manufacturing', 'Metalworking', 'Material Handling', 'Recreation', 'Entertainment'].map((industry, idx) => (
+                  <div key={idx} className="flex items-center gap-2">
+                    <span className="text-accent">•</span>
+                    <span>{industry}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="mb-8">
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Jergens quality control procedures define the entire manufacturing process and provide complete traceability from raw materials, tested in our metallurgical lab, to finished products. The certifications are AS 9100 Rev D/ ISO 9001:2015, ANSI/ ASME B30.26, MIL, NAS, (OSHA) 29 CFR 1918, etc.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <Button variant="outline" asChild>
+                  <a href="https://www.jergensinc.com/qualitycertifications" target="_blank" rel="noopener noreferrer">
+                    View Quality Certifications <ArrowRight className="ml-2 h-4 w-4" />
+                  </a>
+                </Button>
+                <Button variant="outline" asChild>
+                  <a href="https://www.jergensinc.com/literature" target="_blank" rel="noopener noreferrer">
+                    Technical Literature <ArrowRight className="ml-2 h-4 w-4" />
+                  </a>
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -62,11 +109,20 @@ const Products = () => {
                   />
                   <h3 className="text-xl font-bold mb-2">{category.name}</h3>
                   <p className="text-muted-foreground mb-4">{category.description}</p>
-                  <Button variant="link" className="p-0" asChild>
-                    <Link to={`/products/${category.id}`}>
-                      View Details <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
+                  <div className="flex gap-3">
+                    <Button variant="link" className="p-0" asChild>
+                      <Link to={`/products/${category.id}`}>
+                        View Details <ArrowRight className="ml-2 h-4 w-4" />
+                      </Link>
+                    </Button>
+                    {category.link && (
+                      <Button variant="link" className="p-0" asChild>
+                        <a href={category.link} target="_blank" rel="noopener noreferrer">
+                          Jergens Site
+                        </a>
+                      </Button>
+                    )}
+                  </div>
                 </CardContent>
               </Card>
             ))}
