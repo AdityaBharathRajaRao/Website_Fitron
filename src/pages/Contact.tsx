@@ -2,18 +2,10 @@ import { MapPin, Mail, Phone, Clock } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { faqs } from "@/data/content";
-
 const Contact = () => {
-
-  return (
-    <div className="min-h-screen flex flex-col">
+  return <div className="min-h-screen flex flex-col">
       <Navbar />
       
       {/* Hero */}
@@ -52,10 +44,7 @@ const Contact = () => {
                   <Mail className="h-5 w-5 text-accent flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold mb-1">Email</h3>
-                    <a 
-                      href="mailto:bharathrrao@fitronmantech.in" 
-                      className="text-sm text-accent hover:underline"
-                    >
+                    <a href="mailto:bharathrrao@fitronmantech.in" className="text-sm text-accent hover:underline">
                       bharathrrao@fitronmantech.in
                     </a>
                   </div>
@@ -69,10 +58,7 @@ const Contact = () => {
                   <Phone className="h-5 w-5 text-accent flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold mb-1">Phone</h3>
-                    <a 
-                      href="tel:+919845519914" 
-                      className="text-sm text-accent hover:underline"
-                    >
+                    <a href="tel:+919845519914" className="text-sm text-accent hover:underline">
                       +91-98455-19914
                     </a>
                   </div>
@@ -99,29 +85,9 @@ const Contact = () => {
       </section>
 
       {/* FAQ */}
-      <section className="py-16 bg-secondary/30">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
-            <Accordion type="single" collapsible className="w-full">
-              {faqs.map((faq, index) => (
-                <AccordionItem key={index} value={`item-${index}`}>
-                  <AccordionTrigger className="text-left">
-                    {faq.question}
-                  </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground">
-                    {faq.answer}
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
-          </div>
-        </div>
-      </section>
+      
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Contact;
