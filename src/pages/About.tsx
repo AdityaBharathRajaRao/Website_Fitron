@@ -13,7 +13,7 @@ const About = () => {
       {/* Hero */}
       <section className="bg-gradient-hero text-primary-foreground py-16">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">About Fitron Mantech</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">About Fitron</h1>
           <p className="text-xl max-w-3xl mx-auto text-primary-foreground/90">
             Indigenized Industrial Components — Made in India, Trusted Worldwide
           </p>
