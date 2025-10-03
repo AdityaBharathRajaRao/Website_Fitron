@@ -44,7 +44,7 @@ const Index = () => {
                 <Link to="/contact">Request a Quote <ArrowRight className="ml-2 h-5 w-5" /></Link>
               </Button>
               <Button variant="outline" size="lg" asChild className="bg-white/10 border-white text-white hover:bg-white hover:text-primary">
-                <Link to="/products">View Products</Link>
+                <Link to="/jergens">View Products</Link>
               </Button>
             </div>
           </div>
@@ -90,7 +90,7 @@ const Index = () => {
               <Link to="/contact">Contact Sales</Link>
             </Button>
             <Button variant="outline" size="lg" asChild className="bg-white/10 border-white text-white hover:bg-white hover:text-primary">
-              <Link to="/products">Browse Products</Link>
+              <Link to="/jergens">Browse Products</Link>
             </Button>
           </div>
         </div>
