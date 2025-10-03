@@ -22,7 +22,13 @@ const Manufacturing = () => {
           <div className="max-w-4xl mx-auto">
             <div className="prose prose-lg max-w-none">
               <p className="text-muted-foreground leading-relaxed text-lg">
-                Manufacturing of components for Industrial manufacturing solutions is the core business for the organization. In the process of pooling the required talent, professionals, establishing the local supply chain, etc to bring them all for a common goal of developing prototypes which can be tested & ascertained by internal agencies. Further to success of testing and necessary approvals, the products will be subjected to trails at customer's applications. Upon triumph meeting the customer expectations, the products will be mass produced for industrial consumption and later expanded further for global market.
+               Manufacturing of components for Ultra hugh purity applications such as Semiconductor industries, biotech industries, etc. 
+These manufacturing processes will be designed to meet the stringent international standards including SEMI, ASTM, etc. 
+In order to achieve, the company will procure raw materials locally by partnering with the vendors who can develop technologies which consistently maintain the required chemistry & mechanical properties for every batch being produced. Thus ensuring material tolerances precisely. 
+The components will be machined to accurate dimensions using latest tech machines where repeat ability is ensured. 
+The machined components go through indegineously developed chemical treatment where the internal surfaces are chemically treated to meet the required purity requirements. 
+All the components will go through all the necessary tests meeting industry approvals. 
+In order to meet the ultra high purity requirements, the components will be packed in a clean room as per the industry guidelines before it gets shipped to the customers.
               </p>
             </div>
           </div>
