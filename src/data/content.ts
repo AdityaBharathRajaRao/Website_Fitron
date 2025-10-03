@@ -100,19 +100,19 @@ export const founders = [
     name: "Mr. Bharath Rajarao",
     role: "Managing Director",
     bio: "A Mechanical Engineer from Bangalore University and an alumnus of IIM Ahmedabad, is the driving force behind the company's venture into manufacturing technologically advanced products. With over 21 years of industry experience across Sales, Marketing, Operations, Business Development, Product Management, Project Management, Customer Success, Finance, ERP, and CRM. Deeply committed to fostering India's manufacturing ecosystem by harnessing local talent, utilizing locally sourced raw materials, and engaging homegrown experts to develop high-quality products that surpass international standards.",
-    image: teamImage,
+    image: teamImage1,
   },
   {
     name: "Mrs. Tulasi Rao",
     role: "Co-Founder & Visionary",
     bio: "A science graduate from Bangalore University and a senior citizen, has been instrumental in shaping the company's vision. She played a foundational role in establishing this start-up in India with the aim of developing products that adhere to the highest global standards. Draws inspiration from her late husband, Dr. K. V. Rajarao, an accomplished urban scientist at ISRO, town planner, and renowned Vaastu consultant. Motivated by India's economic growth and Make in India initiative, she is committed to delivering solutions that surpass imported alternatives, fostering a self-sustaining ecosystem that enhances global competitiveness.",
-    image: teamImage,
+    image: teamImage2,
   },
   {
     name: "Raghavendra Rao G. N.",
     role: "Advisor - Manufacturing, Quality & Operations",
     bio: "A seasoned engineering and management professional with over 25 years of experience spanning aerospace, electronics, and mechanical design. He excels in leading cross-functional teams to deliver strategic, innovation-driven projects, with a strong focus on integrating sustainability, Industry 4.0, IoT, and AI into business operations. He has held key leadership roles at Navgraam Consulting, Tech Mahindra, and Infosys. Holds a B.E., an M.Tech in Machine Design (university topper), an Executive MBA, and multiple certifications. He will support efforts to enhance operational efficiency, drive innovation, and strengthen global competitiveness.",
-    image: teamImage,
+    image: teamImage3,
   },
 ];
 
