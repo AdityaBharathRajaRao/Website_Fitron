@@ -6,10 +6,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { productCategories } from "@/data/content";
 import productsImage from "@/assets/products-workholding.jpg";
-
 const Products = () => {
-  return (
-    <div className="min-h-screen flex flex-col">
+  return <div className="min-h-screen flex flex-col">
       <Navbar />
       
       {/* Hero */}
@@ -58,12 +56,10 @@ const Products = () => {
             <div className="bg-accent/10 rounded-lg p-6 mb-8">
               <h4 className="text-xl font-bold mb-4">Jergens is a proud supplier to leading companies in the following industries:</h4>
               <div className="grid md:grid-cols-2 gap-3">
-                {['Transportation', 'Military/Aviation', 'Manufacturing', 'Metalworking', 'Material Handling', 'Recreation', 'Entertainment'].map((industry, idx) => (
-                  <div key={idx} className="flex items-center gap-2">
+                {['Transportation', 'Military/Aviation', 'Manufacturing', 'Metalworking', 'Material Handling', 'Recreation', 'Entertainment'].map((industry, idx) => <div key={idx} className="flex items-center gap-2">
                     <span className="text-accent">•</span>
                     <span>{industry}</span>
-                  </div>
-                ))}
+                  </div>)}
               </div>
             </div>
 
@@ -73,14 +69,10 @@ const Products = () => {
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button variant="outline" asChild>
-                  <a href="https://www.jergensinc.com/qualitycertifications" target="_blank" rel="noopener noreferrer">
-                    View Quality Certifications <ArrowRight className="ml-2 h-4 w-4" />
-                  </a>
+                  
                 </Button>
                 <Button variant="outline" asChild>
-                  <a href="https://www.jergensinc.com/literature" target="_blank" rel="noopener noreferrer">
-                    Technical Literature <ArrowRight className="ml-2 h-4 w-4" />
-                  </a>
+                  
                 </Button>
               </div>
             </div>
@@ -99,14 +91,9 @@ const Products = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {productCategories.map((category) => (
-              <Card key={category.id} className="border-border hover:shadow-lg transition-shadow group">
+            {productCategories.map(category => <Card key={category.id} className="border-border hover:shadow-lg transition-shadow group">
                 <CardContent className="pt-6">
-                  <img 
-                    src={productsImage}
-                    alt={category.name}
-                    className="w-full h-48 object-cover rounded-md mb-4 group-hover:scale-105 transition-transform"
-                  />
+                  <img src={productsImage} alt={category.name} className="w-full h-48 object-cover rounded-md mb-4 group-hover:scale-105 transition-transform" />
                   <h3 className="text-xl font-bold mb-2">{category.name}</h3>
                   <p className="text-muted-foreground mb-4">{category.description}</p>
                   <div className="flex gap-3">
@@ -115,17 +102,14 @@ const Products = () => {
                         View Details <ArrowRight className="ml-2 h-4 w-4" />
                       </Link>
                     </Button>
-                    {category.link && (
-                      <Button variant="link" className="p-0" asChild>
+                    {category.link && <Button variant="link" className="p-0" asChild>
                         <a href={category.link} target="_blank" rel="noopener noreferrer">
                           Jergens Site
                         </a>
-                      </Button>
-                    )}
+                      </Button>}
                   </div>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -148,8 +132,6 @@ const Products = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Products;
