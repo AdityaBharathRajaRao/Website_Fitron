@@ -12,7 +12,7 @@ const Products = () => {
       {/* Hero */}
       <section className="bg-gradient-hero text-primary-foreground py-16">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Products & Solutions</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Jergens</h1>
           <p className="text-xl max-w-3xl mx-auto text-primary-foreground/90">
             Precision-engineered components for modern manufacturing, machining, and assembly applications
           </p>
@@ -85,12 +85,10 @@ const Products = () => {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Product Categories</h2>
             <ul className="space-y-3 text-lg">
-              {productCategories.map((category, idx) => (
-                <li key={idx} className="flex items-center gap-3">
+              {productCategories.map((category, idx) => <li key={idx} className="flex items-center gap-3">
                   <span className="text-accent text-xl">•</span>
                   <span className="text-muted-foreground">{category}</span>
-                </li>
-              ))}
+                </li>)}
             </ul>
           </div>
         </div>
@@ -107,19 +105,13 @@ const Products = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {individualProducts.map(product => (
-              <Card key={product.id} className="border-border hover:shadow-lg transition-shadow group">
+            {individualProducts.map(product => <Card key={product.id} className="border-border hover:shadow-lg transition-shadow group">
                 <CardContent className="pt-6">
-                  <img 
-                    src={product.image} 
-                    alt={product.name} 
-                    className="w-full h-48 object-cover rounded-md mb-4 group-hover:scale-105 transition-transform" 
-                  />
+                  <img src={product.image} alt={product.name} className="w-full h-48 object-cover rounded-md mb-4 group-hover:scale-105 transition-transform" />
                   <h3 className="text-xl font-bold mb-2">{product.name}</h3>
                   <p className="text-muted-foreground">{product.description}</p>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
