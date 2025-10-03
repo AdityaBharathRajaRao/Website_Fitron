@@ -20,16 +20,7 @@ const Products = () => {
       </section>
 
       {/* Manufacturing Vertical */}
-      <section className="py-12 bg-secondary/30">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-4">Manufacturing</h2>
-            <p className="text-muted-foreground leading-relaxed">
-              Manufacturing of components for Industrial manufacturing solutions is the core business for the organization. In the process of pooling the required talent, professionals, establishing the local supply chain, etc to bring them all for a common goal of developing prototypes which can be tested & ascertained by internal agencies. Further to success of testing and necessary approvals, the products will be subjected to trials at customer's applications. Upon triumph meeting the customer expectations, the products will be mass produced for industrial consumption and later expanded further for global market.
-            </p>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Trading Principals - Jergens */}
       <section className="py-16">
