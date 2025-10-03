@@ -1,10 +1,10 @@
-import { Target, Eye, Award } from "lucide-react";
+import { Target, Eye } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { founders } from "@/data/content";
 
-// ✅ import the 3 founder/advisor images
+// Import team images
 import teamImage1 from "@/assets/team-founders1.jpg";
 import teamImage2 from "@/assets/team-founders2.jpg";
 import teamImage3 from "@/assets/team-founders3.jpg";
@@ -14,94 +14,111 @@ const About = () => {
     <div className="min-h-screen flex flex-col">
       <Navbar />
 
-      {/* Hero */}
-      <section className="bg-gradient-hero text-primary-foreground py-16">
+      {/* Hero Section */}
+      <section className="bg-gradient-hero text-primary-foreground py-20">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">About Fitron</h1>
-          <p className="text-xl max-w-3xl mx-auto text-primary-foreground/90">
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
+            About Fitron
+          </h1>
+          <p className="text-lg md:text-xl max-w-3xl mx-auto text-primary-foreground/90">
             Indigenized Industrial Components — Made in India, Trusted Worldwide
           </p>
         </div>
       </section>
 
-      {/* About Us */}
+      {/* About Us Section */}
       <section className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">About Us</h2>
-            <div className="space-y-4 text-muted-foreground leading-relaxed">
-              <p>
-                The company will focus on the indigenization of products for Industrial manufacturing
-                solutions. Currently, nearly all products in this sector are imported into India...
-              </p>
-              <p>
-                The company's development and expansion will proceed in phases. Initially, the focus will be
-                on developing products that meet international standards...
-              </p>
-            </div>
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
+            Who We Are
+          </h2>
+          <div className="space-y-6 text-muted-foreground leading-relaxed text-lg">
+            <p>
+              At Fitron, we are committed to transforming India’s manufacturing
+              landscape by indigenizing high-quality industrial components.
+              Today, nearly all products in this sector are imported — creating
+              dependency and slowing innovation. We aim to change that.
+            </p>
+            <p>
+              Our journey will progress in carefully planned phases, beginning
+              with products that meet international standards. Over time, we
+              will expand into advanced, globally competitive solutions that not
+              only serve India but also make their mark on the world.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* Vision & Mission */}
+      {/* Vision & Mission Section */}
       <section className="py-16 bg-secondary/30">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card className="border-border">
-              <CardContent className="pt-6">
-                <Eye className="h-10 w-10 text-accent mb-4" />
-                <h2 className="text-2xl font-bold mb-4">Vision</h2>
-                <p className="text-muted-foreground leading-relaxed">
-                  To become a globally recognized Indian Original Equipment Manufacturer (OEM)...
-                </p>
-              </CardContent>
-            </Card>
-            <Card className="border-border">
-              <CardContent className="pt-6">
-                <Target className="h-10 w-10 text-accent mb-4" />
-                <h2 className="text-2xl font-bold mb-4">Mission</h2>
-                <div className="text-muted-foreground leading-relaxed">
-                  <p className="mb-3">Our mission is to indigenize high-quality components...</p>
-                  <ul className="space-y-2">
-                    <li className="flex items-start gap-2">
-                      <span className="text-accent mt-1">•</span>
-                      <span>Developing products that meet or exceed international standards...</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-accent mt-1">•</span>
-                      <span>Leveraging local materials, skilled talent, and innovative techniques...</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-accent mt-1">•</span>
-                      <span>Creating employment opportunities...</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-accent mt-1">•</span>
-                      <span>Building a robust manufacturing ecosystem...</span>
-                    </li>
-                  </ul>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
+        <div className="container mx-auto px-4 grid md:grid-cols-2 gap-8">
+          {/* Vision */}
+          <Card className="border-border shadow-md rounded-2xl">
+            <CardContent className="pt-8">
+              <Eye className="h-12 w-12 text-accent mb-6" />
+              <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
+              <p className="text-muted-foreground text-lg leading-relaxed">
+                To become a globally recognized Indian Original Equipment
+                Manufacturer (OEM) delivering world-class industrial solutions
+                that redefine trust, quality, and innovation.
+              </p>
+            </CardContent>
+          </Card>
+
+          {/* Mission */}
+          <Card className="border-border shadow-md rounded-2xl">
+            <CardContent className="pt-8">
+              <Target className="h-12 w-12 text-accent mb-6" />
+              <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
+              <ul className="text-muted-foreground space-y-3 text-lg leading-relaxed">
+                <li className="flex items-start gap-3">
+                  <span className="text-accent mt-1">•</span>
+                  <span>
+                    Develop products that meet or exceed international standards
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-accent mt-1">•</span>
+                  <span>
+                    Leverage local resources, talent, and innovative techniques
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-accent mt-1">•</span>
+                  <span>Create employment opportunities across India</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-accent mt-1">•</span>
+                  <span>Build a sustainable, robust manufacturing ecosystem</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
         </div>
       </section>
 
-      {/* Founders & Advisors */}
-      <section className="py-16">
+      {/* Founders & Advisors Section */}
+      <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Founders & Advisors</h2>
+          <div className="text-center mb-14">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Founders & Advisors
+            </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Industry veterans with decades of combined experience driving India's manufacturing excellence
+              Industry veterans with decades of experience driving India’s
+              manufacturing excellence
             </p>
           </div>
 
-          <div className="space-y-8">
+          <div className="grid gap-10">
             {founders.map((founder, index) => (
-              <Card key={index} className="border-border">
-                <CardContent className="pt-6">
-                  <div className="grid md:grid-cols-4 gap-6">
+              <Card
+                key={index}
+                className="border-border shadow-md rounded-2xl overflow-hidden"
+              >
+                <CardContent className="p-6">
+                  <div className="grid md:grid-cols-4 gap-6 items-center">
+                    {/* Image */}
                     <div className="md:col-span-1">
                       <img
                         src={
@@ -112,13 +129,21 @@ const About = () => {
                             : teamImage3
                         }
                         alt={founder.name}
-                        className="w-full h-48 object-contain rounded-md bg-gray-50"
+                        className="w-full h-56 object-cover rounded-lg bg-gray-100 shadow-sm"
                       />
                     </div>
+
+                    {/* Text */}
                     <div className="md:col-span-3">
-                      <h3 className="text-2xl font-bold mb-1">{founder.name}</h3>
-                      <p className="text-accent font-medium mb-4">{founder.role}</p>
-                      <p className="text-muted-foreground leading-relaxed">{founder.bio}</p>
+                      <h3 className="text-2xl font-bold mb-2">
+                        {founder.name}
+                      </h3>
+                      <p className="text-accent font-medium mb-4">
+                        {founder.role}
+                      </p>
+                      <p className="text-muted-foreground leading-relaxed text-lg">
+                        {founder.bio}
+                      </p>
                     </div>
                   </div>
                 </CardContent>
