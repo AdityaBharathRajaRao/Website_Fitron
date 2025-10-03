@@ -104,19 +104,31 @@ export const founders = [
   {
     name: "Mr. Bharath Rajarao",
     role: "Managing Director",
-    bio: "A Mechanical Engineer from Bangalore University and an alumnus of IIM Ahmedabad, is the driving force behind the company's venture into manufacturing technologically advanced products...",
+    bio: `Mr. Bharath Rajarao, a Mechanical Engineer from Bangalore University and an alumnus of IIM Ahmedabad, is the driving force behind the launch of the company’s venture into manufacturing technologically advanced products. With over 21 years of industry experience, he has excelled across diverse functions including Sales, Marketing, Operations, Business Development, Product Management, Project Management, Customer Success, Finance, ERP, and CRM.
+
+Currently serving as the Managing Director, Mr. Bharath Rajarao is deeply committed to fostering India’s manufacturing ecosystem. His vision is to harness local talent, utilize locally sourced raw materials, and engage homegrown experts to develop high-quality products that not only meet but surpass international standards.
+
+Building products indigenously presents its own set of challenges, particularly in developing end-to-end processes that meet stringent technical specifications. However, the company is well-positioned to overcome these hurdles through a strong foundation of professional expertise, industry collaboration, employee dedication, and support from the government.`,
     image: teamImage1,
   },
   {
     name: "Mrs. Tulasi Rao",
     role: "Co-Founder & Visionary",
-    bio: "A science graduate from Bangalore University and a senior citizen, has been instrumental in shaping the company's vision...",
+    bio: `Mrs. Tulasi Rao, a science graduate from Bangalore University and a senior citizen, has been instrumental in shaping the company's vision. She played a foundational role in establishing a start-up in India with the aim of developing products that adhere to the highest global standards.
+
+She draws inspiration and strength from her late husband, Dr. K. V. Rajarao, an accomplished urban scientist at ISRO, town planner, and renowned Vaastu consultant. He authored four books in the mid-1990s and was honoured with both the Vishwakarma Award and the Indira Gandhi Priyadarshini Award for his contributions.
+
+Motivated by the opportunities arising from India's economic growth and the Make in India initiative, Mrs. Rao is committed to delivering solutions that surpass imported alternatives. Her vision focuses on reducing import dependency by fostering a self-sustaining ecosystem—one that supports a robust supply chain and enhances global competitiveness.`,
     image: teamImage2,
   },
   {
     name: "Raghavendra Rao G. N.",
     role: "Advisor - Manufacturing, Quality & Operations",
-    bio: "A seasoned engineering and management professional with over 25 years of experience spanning aerospace, electronics, and mechanical design...",
+    bio: `Raghavendra Rao G. N. is a seasoned engineering and management professional with over 25 years of experience spanning aerospace, electronics, and mechanical design. He excels in leading cross-functional teams to deliver strategic, innovation-driven projects, with a strong focus on integrating sustainability, Industry 4.0, IoT, and AI into business operations.
+
+He has held key leadership roles at Navgraam Consulting, Tech Mahindra, and Infosys, and holds a solid academic background with a B.E., an M.Tech in Machine Design (university topper), an Executive MBA, and multiple certifications.
+
+In his advisory role, Mr. Rao will focus on manufacturing, quality, and operations. With his deep industry experience and strategic insight, he will support our efforts to enhance operational efficiency, drive innovation, and strengthen our global competitiveness. His contribution will be key to advancing our long-term goals.`,
     image: teamImage3,
   },
 ];
