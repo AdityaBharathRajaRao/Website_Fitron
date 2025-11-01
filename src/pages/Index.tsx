@@ -17,6 +17,11 @@ const Index = () => {
     description: "ASTM, ASME, and ISO-grade manufacturing with full material certifications and testing documentation."
   }, {
     icon: <Users className="h-8 w-8 text-accent" />,
+    title: "Save Costs",
+    description: "Solutions improve production efficiencies with no compromise on workmanship, quality & performance."
+  }
+     {
+    icon: <Users className="h-8 w-8 text-accent" />,
     title: "Local Talent & Supply Chain",
     description: "Leveraging India's skilled workforce and robust supply ecosystem to deliver competitive, reliable solutions."
   }];
