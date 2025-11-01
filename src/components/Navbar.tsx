@@ -25,12 +25,16 @@ const Navbar = () => {
   return <nav className="sticky top-0 z-50 bg-background border-b border-border shadow-sm">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-hero rounded-md flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-xl">F</span>
-            </div>
-            <span className="text-xl font-bold text-foreground">Fitron</span>
-          </Link>
+         <Link to="/" className="flex items-center space-x-3">
+  <img
+    src="/favicon.ico"
+    alt="Fitron Manufacturing Tech Pvt Ltd Logo"
+    className="h-10 w-10"
+  />
+  <span className="text-lg md:text-xl font-bold text-foreground">
+    Fitron Manufacturing Tech Pvt Ltd
+  </span>
+</Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-1">
