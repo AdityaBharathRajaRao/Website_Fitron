@@ -53,7 +53,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center text-sm text-primary-foreground/60">
-          <p>&copy; {currentYear} Fitron Mantech. All rights reserved. | Made in India 🇮🇳</p>
+          <p>&copy; {currentYear} Fitron Manufacturing Tech Pvt Ltd. All rights reserved</p>
         </div>
       </div>
     </footer>
