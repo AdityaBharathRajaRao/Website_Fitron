@@ -102,11 +102,11 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 place-items-center">
             {valueProps.map((prop, index) => (
               <Card
                 key={index}
-                className="border-border hover:shadow-lg transition-shadow"
+                className="border-border hover:shadow-lg transition-shadow w-full max-w-md"
               >
                 <CardContent className="pt-6">
                   <div className="mb-4">{prop.icon}</div>
