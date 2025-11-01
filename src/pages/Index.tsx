@@ -62,13 +62,10 @@ const Index = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl text-white">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Indigenized Industrial Components — Made in India, Trusted
-              Worldwide
+              “Industrial Manufacturing Solutions – Made for You, Trusted Worldwide”
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-white/90">
-              Developing ASTM / ASME / ISO-grade components using locally
-              sourced materials, skilled talent and industry-grade testing —
-              enabling 'Make in India' and 'Viksit Bharat' at scale.
+              Offering products & solutions meeting stringent international quality standards not limited to ASTM/ASME/ISO/NAS/MIL, etc.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button variant="hero" size="lg" asChild>
