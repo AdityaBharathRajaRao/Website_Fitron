@@ -18,10 +18,11 @@ const About = () => {
       <section className="bg-gradient-hero text-primary-foreground py-20">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-            About Fitron
+            About Fitron 
           </h1>
           <p className="text-lg md:text-xl max-w-3xl mx-auto text-primary-foreground/90">
-            Indigenized Industrial Components — Made in India, Trusted Worldwide
+           Industrial Manufacturing Solutions – Made for You, Trusted Worldwide
+
           </p>
         </div>
       </section>
