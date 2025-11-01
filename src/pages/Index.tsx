@@ -5,11 +5,11 @@ import { Card, CardContent } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import heroImage from "@/assets/hero-manufacturing.jpg";
-import std1 from "@/assets/std1.png";
-import std2 from "@/assets/std2.png";
-import std3 from "@/assets/std3.png";
-import std4 from "@/assets/std4.png";
-import std5 from "@/assets/std5.png";
+import std1 from "@/assets/std1.jpg";
+import std2 from "@/assets/std2.jpg";
+import std3 from "@/assets/std3.jpg";
+import std4 from "@/assets/std4.jpg";
+import std5 from "@/assets/std5.jpg";
 
 const Index = () => {
   const valueProps = [
