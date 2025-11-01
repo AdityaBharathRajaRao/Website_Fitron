@@ -1,11 +1,15 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, CheckCircle, Globe, Users, Award } from "lucide-react";
+import { ArrowRight, Globe, Users, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import heroImage from "@/assets/hero-manufacturing.jpg";
-import qualityImage from "@/assets/quality-lab.jpg";
+import std1 from "@/assets/std1.png";
+import std2 from "@/assets/std2.png";
+import std3 from "@/assets/std3.png";
+import std4 from "@/assets/std4.png";
+import std5 from "@/assets/std5.png";
 
 const Index = () => {
   const valueProps = [
@@ -20,6 +24,7 @@ const Index = () => {
       title: "International Standards",
       description:
         "ASTM, ASME, and ISO-grade manufacturing with full material certifications and testing documentation.",
+      standards: [std1, std2, std3, std4, std5], // ✅ added images
     },
     {
       icon: <Users className="h-8 w-8 text-accent" />,
@@ -33,15 +38,6 @@ const Index = () => {
       description:
         "Leveraging India's skilled workforce and robust supply ecosystem to deliver competitive, reliable solutions.",
     },
-  ];
-
-  const capabilities = [
-    "CNC Machining (3, 4, 5-axis)",
-    "Precision Grinding & Finishing",
-    "Heat Treatment & Surface Hardening",
-    "CMM Inspection & Quality Control",
-    "Material Testing & Certification",
-    "Custom Engineering & Prototyping",
   ];
 
   return (
@@ -65,7 +61,8 @@ const Index = () => {
               “Industrial Manufacturing Solutions – Made for You, Trusted Worldwide”
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-white/90">
-              Offering products & solutions meeting stringent international quality standards not limited to ASTM/ASME/ISO/NAS/MIL, etc.
+              Offering products & solutions meeting stringent international quality
+              standards not limited to ASTM/ASME/ISO/NAS/MIL, etc.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button variant="hero" size="lg" asChild>
@@ -105,10 +102,24 @@ const Index = () => {
                 key={index}
                 className="border-border hover:shadow-lg transition-shadow w-full max-w-md"
               >
-                <CardContent className="pt-6">
-                  <div className="mb-4">{prop.icon}</div>
+                <CardContent className="pt-6 text-center">
+                  <div className="mb-4 flex justify-center">{prop.icon}</div>
                   <h3 className="text-xl font-semibold mb-3">{prop.title}</h3>
-                  <p className="text-muted-foreground">{prop.description}</p>
+                  <p className="text-muted-foreground mb-4">{prop.description}</p>
+
+                  {/* ✅ Display standard logos only for "International Standards" */}
+                  {prop.standards && (
+                    <div className="flex justify-center items-center flex-wrap gap-4 mt-4">
+                      {prop.standards.map((img, i) => (
+                        <img
+                          key={i}
+                          src={img}
+                          alt={`standard-${i}`}
+                          className="h-10 w-auto object-contain"
+                        />
+                      ))}
+                    </div>
+                  )}
                 </CardContent>
               </Card>
             ))}
