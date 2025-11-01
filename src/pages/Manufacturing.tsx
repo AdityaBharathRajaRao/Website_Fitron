@@ -11,7 +11,9 @@ const Manufacturing = () => {
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Manufacturing</h1>
           <p className="text-xl max-w-3xl mx-auto text-primary-foreground/90">
-            Core business focused on developing world-class industrial components
+          Indigenized Industrial components – Made in India, Trusted Worldwide. 
+Developing products meeting international quality standards and testing requirements by using locally sourced materials, skilled talent, in-house technical know-how – enabling ‘Make in India’ and ‘Viksit Bharat’ at scale.
+
           </p>
         </div>
       </section>
