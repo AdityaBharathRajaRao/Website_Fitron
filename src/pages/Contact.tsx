@@ -29,6 +29,7 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold mb-1">Address</h3>
                     <p className="text-sm text-muted-foreground">
+                      Fitron Manufacturing Tech Pvt Ltd,<br />
                       1351, Ground Floor, 25th Main, 24th Cross,<br />
                       Banashankari 2nd Stage,<br />
                       Bangalore – 560070
@@ -74,7 +75,7 @@ const Contact = () => {
                     <h3 className="font-semibold mb-1">Business Hours</h3>
                     <p className="text-sm text-muted-foreground">
                       Monday - Saturday<br />
-                      9:00 AM - 6:00 PM IST
+                      9:00 AM - 5:30 PM IST
                     </p>
                   </div>
                 </div>
