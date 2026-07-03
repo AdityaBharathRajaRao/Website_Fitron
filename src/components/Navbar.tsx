@@ -10,12 +10,13 @@ const Navbar = () => {
   const isActive = (path: string) => location.pathname === path;
 
   const navigation = [
-    { name: "Home", href: "/" },
-    { name: "About", href: "/about" },
-    { name: "Manufacturing", href: "/manufacturing" },
-    { name: "Jergens", href: "/jergens" },
-    { name: "Contact", href: "/contact" },
-  ];
+  { name: "Home", href: "/" },
+  { name: "About", href: "/about" },
+  { name: "Manufacturing", href: "/manufacturing" },
+  { name: "Jergens", href: "/jergens" },
+  { name: "JK Fenner", href: "/jk-fenner" },
+  { name: "Contact", href: "/contact" },
+];
 
   return (
     <nav className="sticky top-0 z-50 bg-background border-b border-border shadow-sm">
