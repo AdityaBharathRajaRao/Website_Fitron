@@ -15,6 +15,7 @@ const Navbar = () => {
   { name: "Manufacturing", href: "/manufacturing" },
   { name: "Jergens", href: "/jergens" },
   { name: "JK Fenner", href: "/jk-fenner" },
+  { name: "Orbital Services", href: "/orbital-services" },
   { name: "Contact", href: "/contact" },
 ];
 
